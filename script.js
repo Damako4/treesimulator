@@ -1,6 +1,9 @@
 window.onload = function() {
   var canvas = document.getElementById("spawner");
   var ctx = canvas.getContext("2d");
-  var img = document.getElementById("tree_icon.png");
-  ctx.drawImage(img, 10, 10);
+  var myImg = new Image();
+  img.onload = function() {
+    context.drawImage(myImg, 0, 0);
+  };
+  img.src = 'tree_icon.png';
 };
