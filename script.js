@@ -5,5 +5,5 @@ window.onload = function() {
   image.onload = function() {
      ctx.drawImage(image, 0, 0, image.width/3, image.height/3);
   };
-  image.src = "http://apextreeandearth.com/files/2014/04/tree1.png";
+  image.src = "https://treemastersllc.com/files/2019/03/_4.png";
 };
