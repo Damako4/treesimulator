@@ -36,6 +36,8 @@ window.onload = function() {
   }
   canvas.addEventListener("mousedown", function(evt) {
     var mousePos = getMousePos(canvas, evt);
-    drawTree(mousePos.x-15, mousePos.y-15)
+    drawTree(mousePos.x-15, mousePos.y-15);
+    var pixel = ctx.getImageData(mousePos.x, mousePos.y);
+    alert(pixel.data[3]);
   }, false);
 };
