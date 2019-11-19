@@ -5,7 +5,7 @@ window.onload = function() {
   const images = [];
   var imageCount = 0;
   function allLoaded(){
-      ctx.drawImage(images[1],0,0);
+      ctx.drawImage(images[1],0,0,images[1].width/6,images[1].height/6);
       ctx.drawImage(images[0],0,0);
   }
   imageURL.forEach(src => {
