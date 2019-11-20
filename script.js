@@ -38,6 +38,6 @@ window.onload = function() {
     var mousePos = getMousePos(canvas, evt);
     drawTree(mousePos.x-15, mousePos.y-15);
     var pixel = ctx.getImageData(mousePos.x, mousePos.y,1,1).data;
-    alert(pixel[3]);
+    alert("clicked");
   }, false);
 };
